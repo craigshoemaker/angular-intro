@@ -1,0 +1,14 @@
+{
+  "name": "angular-introduction",
+  "version": "1.0.0",
+  "description": "Introduction to Angular",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -o"
+  },
+  "author": "Craig Shoemaker <cshoemaker@infragistics.com>",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <title>Movie Search</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="container" ng-app="app" ng-cloak>
+    
+    <main ng-controller="DemoController">
+        <header>
+            <h1>Movie Search</h1>
+            <input type="search" 
+                class="form-control" 
+                placeholder="search" 
+                ng-model="searchPhrase"
+                autofocus>
+        </header>
+        
+        <div ng-repeat="movie in movies | filter:searchPhrase" ng-if="!error" class="card">
+            <movie-info-card></movie-info-card>
+        </div>
+        
+        <div ng-if="error">
+            {{error}}
+        </div>
+    </main>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="service.js"></script>
+    <script src="directive.js"></script>
+    <script src="controller.js"></script>
+</body>
+</html>

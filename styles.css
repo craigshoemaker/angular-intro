@@ -1,0 +1,31 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+.card {
+    display: inline-block;
+    width: 175px;
+    padding: 12px;
+    border:solid 1px #ccc;
+    margin:15px;
+    border-radius: 3px;
+}
+
+.card:hover {
+    background-color:#eee;
+    cursor: pointer;
+}
+
+.title {
+    height: 50px;
+}
+
+header {
+    background-color: #eee;
+    padding: 15px;
+}
